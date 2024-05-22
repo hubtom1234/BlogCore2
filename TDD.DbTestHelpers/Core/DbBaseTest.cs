@@ -1,4 +1,6 @@
+using System.Security.AccessControl;
 using System.Transactions;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 
 namespace TDD.DbTestHelpers.Core
@@ -7,6 +9,11 @@ namespace TDD.DbTestHelpers.Core
     {
         private readonly TFixture _fixture;
         private TransactionScope _transaction;
+
+        public DbContext fixContext()
+        {
+            return _fixture.GetContext;
+        }
 
         protected DbBaseTest()
         {

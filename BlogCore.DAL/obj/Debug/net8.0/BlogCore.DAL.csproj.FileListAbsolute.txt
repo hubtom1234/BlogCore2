@@ -1,0 +1,12 @@
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.csproj.AssemblyReference.cache
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.AssemblyInfoInputs.cache
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.AssemblyInfo.cs
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\bin\Debug\net8.0\BlogCore.DAL.deps.json
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\bin\Debug\net8.0\BlogCore.DAL.dll
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\bin\Debug\net8.0\BlogCore.DAL.pdb
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.dll
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\refint\BlogCore.DAL.dll
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\BlogCore.DAL.pdb
+C:\Users\hubto\Desktop\SAB\lab1\BlogCore\BlogCore.DAL\obj\Debug\net8.0\ref\BlogCore.DAL.dll

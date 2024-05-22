@@ -1,8 +1,14 @@
 ﻿Posts:
   test-post:
-    Id: 1
+    Id: 1 
     Author: test
     Content: test, test, test...
   post2:
+    Id: 2
     Author: me
-    Content: some content
+    Content: some 
+Comments:
+  com_one:
+    Id: 1
+    PostId: 1
+    Content: hah 

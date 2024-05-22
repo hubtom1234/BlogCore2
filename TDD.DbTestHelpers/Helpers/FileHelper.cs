@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using TDD.DbTestHelpers.EF;
 using YamlDotNet.Serialization;
+using Microsoft.EntityFrameworkCore;
 
 namespace TDD.DbTestHelpers.Helpers
 {
@@ -38,6 +39,7 @@ namespace TDD.DbTestHelpers.Helpers
 
         public void FillFixturesFileFiles(Type fixtureType, DbContext context, string yamlFolderName, IEnumerable<string> yamlFullFilesNames)
         {
+
             var fixtures = GetFixutresFromYaml(fixtureType, yamlFolderName, yamlFullFilesNames);
             foreach (var fixtureTable in fixtures.GetType().GetProperties())
             {
@@ -59,17 +61,18 @@ namespace TDD.DbTestHelpers.Helpers
 
         private object GetFixutresFromYaml(Type fixtureType, string yamlFolderName, IEnumerable<string> yamlFullFilesNames)
         {
-            var yamlSerializer = new SerializerBuilder().Build();
+            var yamlDeserializer = new DeserializerBuilder().Build();
 
-            var methodInfo = yamlSerializer.GetType().GetMethod("Deserialize", new [] { typeof(TextReader )});
-            try
-            {
-                return methodInfo.Invoke(yamlSerializer, new [] { GetAllYamlConfiguration(yamlFullFilesNames, yamlFolderName) });
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Cannot deserialize YAML file. See inner exception.", ex);
-            }
+            return yamlDeserializer.Deserialize(GetAllYamlConfiguration(yamlFullFilesNames, yamlFolderName), fixtureType);
+            //var methodInfo = yamlDeserializer.GetType().GetMethod("Deserialize", new[] { typeof(TextReader ), fixtureType});
+            //try
+            //{
+            //    return methodInfo.Invoke(yamlDeserializer, new[] { GetAllYamlConfiguration(yamlFullFilesNames, yamlFolderName)});
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new Exception("Cannot deserialize YAML file. See inner exception.", ex);
+            //}
         }
 
 

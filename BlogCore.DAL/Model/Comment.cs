@@ -2,11 +2,10 @@
 
 namespace Blog.DAL.Model
 {
-    public class Post
+    public class Comment
     {
-        [Key]
-        public long Id { get; set; }
+        [Key] public long Id { get; set; }
+        [Required] public long PostId { get; set; }
         [Required] public string Content { get; set; }
-        [Required] public string Author { get; set; }
     }
 }
