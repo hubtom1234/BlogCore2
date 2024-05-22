@@ -6,3 +6,6 @@
 /.vs/BlogCore/FileContentIndex
 /.vs/BlogCore/v17/TestStore/0
 /.vs
+/TDD.DbTestHelpers/obj
+/BlogCore.DAL.Tests/obj
+/BlogCore.DAL.Tests/bin/Debug/net8.0
