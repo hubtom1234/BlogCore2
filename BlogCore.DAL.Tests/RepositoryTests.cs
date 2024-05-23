@@ -10,7 +10,6 @@ using BlogCore.DAL.Tests;
 using TDD.DbTestHelpers.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestPlatform.Utilities.Helpers;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using YamlDotNet.Core.Tokens;
 
 namespace Blog.DAL.Tests
